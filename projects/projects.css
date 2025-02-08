@@ -102,13 +102,13 @@ main {
     border: 5px solid darkgoldenrod;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     margin: 5vh auto;
-    padding: 30px;
+    padding: 8vh;
     width: 90%;
 }
 
 #calculator-title {
     font-family: 'Della Respira', serif;
-    font-size: calc(15px + 0.5vw);
+    font-size: calc(20px + 1vw);
     font-weight: bold;
     color: darkgoldenrod;
     margin-bottom: 5px;

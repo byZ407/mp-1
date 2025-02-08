@@ -200,6 +200,10 @@ footer a:hover {
         padding: 5vh 2vw;
     }
 
+    .references-section h3 {
+        margin-bottom: 2vh;
+    }
+
     th, td {
         padding: 30px;
     }
