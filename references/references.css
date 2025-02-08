@@ -196,8 +196,16 @@ footer a:hover {
         font-size: calc(2px + 1.5vw);
     }
 
+    .references-section {
+        padding: 5vh 2vw;
+    }
+
+    th, td {
+        padding: 30px;
+    }
+
     table {
-        width: 70%;
+        width: 80%;
     }
 }
 
