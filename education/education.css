@@ -79,6 +79,7 @@ nav a:hover {
 
 main {
     width: 70%;
+    height: 100vh;
     flex-direction: column;
     background-color: #F5F5F5;
     color: #303030;
@@ -151,7 +152,7 @@ footer a:hover {
 }
 /*Footer ends*/
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     main {
         display: flex;
         flex-direction: column;
