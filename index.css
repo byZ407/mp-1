@@ -120,7 +120,7 @@ main {
     align-self: center;
     width: 60%;
     font-family: 'DM Serif Display', serif;
-    font-size: calc(12px + 0.5vw);
+    font-size: calc(10px + 0.5vw);
     background-color: #fff;
     border: 3px solid darkgoldenrod;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
@@ -202,13 +202,14 @@ footer a:hover {
     #home-text {
         align-self: center;
         width: 100%;
-        padding:2vh 2vw;
+        padding:5vh 3vw;
+        font-size: calc(15px + 0.5vw);
     }
 
     #home-image {
         max-width: 40%;
-        margin: 1vh auto;
-        padding-bottom: 10px;
+        margin: 3vh auto;
+        padding-bottom: 2vh;
     }
 
     #profile-image {
@@ -218,7 +219,8 @@ footer a:hover {
     #website-intro{
         width: 100%;
         align-self: center;
-        padding: 3vh;
+        font-size: calc(15px + 0.5vw);
+        padding: 5vh;
     }
 }
 
