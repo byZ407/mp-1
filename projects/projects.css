@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#project-page {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+/*Header starts*/
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5vh 3vw;
+    background-color: #282828;
+    border-bottom: 5px solid darkgoldenrod;
+    text-align: left;
+}
+
+header h1 {
+    color: darkgoldenrod;
+    font-size: 35px;
+}
+
+header p {
+    font-family: 'Cinzel', serif;
+    font-size: 11px;
+    margin: 0 9px;
+    color: #D3D3D3;
+}
+/*Header ends*/
+
+/*Container starts:*/
+#project-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: #fff;
+}
+
+nav {
+    width: 30%;
+    background-color: #282828;
+    padding: 3vh;
+    border-right: 5px solid darkgoldenrod;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    justify-content: space-evenly;
+}
+
+nav li {
+    margin: 3vh auto;
+    padding: 2vh 0;
+    color: darkgray;
+    font-size: calc(2px + 1.5vw);
+    transition: background-color 0.2s;
+}
+
+nav a {
+    text-decoration: none;
+    color: darkgoldenrod;
+    transition: color 0.2s;
+    font-family: 'Della Respira', serif;
+}
+
+nav a:hover {
+    color: #e6c300;
+}
+
+main {
+    width: 70%;
+    flex-direction: column;
+    background-color: #F5F5F5;
+    color: #303030;
+    padding: 2vh 2vw;
+}
+
+#projects-title {
+    text-align: center;
+    color: darkgoldenrod;
+    font-size: calc(25px + 0.5vw);
+    margin-top: 2vh;
+    font-family: 'Della Respira', serif;
+    font-weight: 400;
+}
+
+#calculator-container {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid darkgoldenrod;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    margin: 5vh auto;
+    padding: 30px;
+    width: 90%;
+}
+
+#calculator-title {
+    font-family: 'Della Respira', serif;
+    font-size: calc(15px + 0.5vw);
+    font-weight: bold;
+    color: darkgoldenrod;
+    margin-bottom: 5px;
+}
+
+#input-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 4vh;
+}
+
+#input-box label {
+    font-family: 'Della Respira', serif;
+    font-size: calc(15px + 0.3vw);
+    font-weight: bold;
+    color: #303030;
+    padding: 2vh;
+}
+
+#input-box input {
+    background-color: #F5F5F5;
+    width: 90%;
+    max-width: 300px;
+    padding: 1vh 0;
+    font-size: calc(12px + 0.5vw);
+    border: 2px solid darkgoldenrod;
+    text-align: center;
+}
+
+#operation-buttons {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 3vh;
+}
+
+#operation-buttons button {
+    background-color: #282828;
+    color: darkgoldenrod;
+    border: 2px solid darkgoldenrod;
+    padding: 1vh 2vw;
+    font-size: calc(12px + 0.5vw);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+    min-width: 40px;
+}
+
+#operation-buttons button:hover {
+    background-color: darkgoldenrod;
+    color: white;
+}
+
+#output {
+    text-align: center;
+    font-family: 'Della Respira', serif;
+    font-size: calc(15px + 1vw);
+    color: #303030;
+}
+/*Container ends:*/
+
+/*Footer starts*/
+footer {
+    background-color: #282828;
+    color: #D3D3D3;
+    padding: 2vh 2vw;
+    text-align: center;
+    border-top: 5px solid darkgoldenrod;
+}
+
+footer a {
+    color: darkgoldenrod;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #e6c300;
+}
+/*Footer ends*/
+
+@media screen and (max-width: 750px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        height: 100%;
+    }
+
+    #project-page {
+        width: 90vw;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    #project-container {
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100%;
+        border-right: none;
+        border-bottom: 5px solid darkgoldenrod;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav li {
+        margin: 1vh 1vw;
+        padding: 1vh 2vw;
+        font-size: calc(2px + 1.5vw);
+    }
+
+    #calculator-container {
+        width: 90%;
+    }
+
+    #input-box input {
+        width: 50%;
+    }
+}
+
